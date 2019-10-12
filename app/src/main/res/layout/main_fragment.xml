@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <RelativeLayout
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|center_vertical"
+        tools:context=".ui.main.MainFragment">
+
+
+        <com.practice.mvvmpoc.ui.components.CarouselViewComponent
+            android:id="@+id/cv_1"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent" />
+
+        <com.practice.mvvmpoc.ui.components.CarouselViewComponent
+            android:id="@+id/cv_2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@id/cv_1"
+            android:background="@color/green" />
+
+        <com.practice.mvvmpoc.ui.components.CarouselViewComponent
+            android:id="@+id/cv_3"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="24dp"
+            android:layout_toEndOf="@id/cv_2"
+            android:background="@color/colorPrimary" />
+
+        <com.practice.mvvmpoc.ui.components.CarouselViewComponent
+            android:id="@+id/cv_4"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@id/cv_3"
+            android:background="@color/dark_yellow" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#000000" />
+
+    <RelativeLayout
+        android:id="@+id/bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|center_vertical">
+
+        <Button
+            android:id="@+id/btn_bottomView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@android:color/holo_blue_light" />
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
+
+
+
